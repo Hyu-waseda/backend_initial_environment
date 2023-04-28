@@ -5,6 +5,7 @@ from routers import dummy_router
 
 app = FastAPI()
 
+# フロントとつなぐ時に使用する
 origins = [
     "http://localhost:8080/temprature",
     "http://localhost:3000",
