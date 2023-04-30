@@ -3,6 +3,7 @@ APP_PORT=8080
 
 # カレントディレクトリのDockerfileでイメージを作成する
 build:
+	pip freeze > requirements.txt
 	docker build -t $(IMAGE_NAME) .
 
 # 作成したイメージを起動する
